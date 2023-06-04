@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'PyeongChang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChang-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{margin: 0; max-width: 1512px; max-height: fit-content;
+    font-family: 'PyeongChang-Bold';}
+section{background: black;}
+.container1{/* index2 */
+    max-height: 1700px; width: 1512px;
+    overflow: hidden;}
+.container2{/* index3 */
+    max-height: 2400px; width: 1512px;
+    overflow: hidden;}
+.container3{/* indexhow ~ what */
+    max-height: 950px; width: 1512px;
+    overflow: hidden;}
+.container4{/* indexfin */
+    max-height: 2700px; width: 1512px;
+    overflow: hidden;}
+.banner{position: relative; z-index: 4;
+    width: 100%; height: auto;}
+.bannershw{position: relative; z-index: 3;
+    width: 100%; height: auto;
+    top: -8px;
+mix-blend-mode: multiply;}
+.record{position: relative; z-index: 2;
+    width: 50%; height: auto;
+    top: -400px; left: 25%;
+    animation: recordmove 3s linear infinite;}
+@keyframes recordmove {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+        }
+.recordback{position: relative; z-index: 1;
+    width: 50%; height: auto;
+    top: -1080px; left: 28%;}
+#player{position: relative; z-index: 8; 
+    top: 50%; left: 50%; transform: translateX(-50%);}
+.wrap{width: 1200px; margin: auto;}
+.fix-text{/* 이 디스크를 발견한 외계 지적 생명체에게 
+    우리의 목소리를 남깁니다.*/
+    position: fixed; z-index: 10;
+    top: 0; left: 50%; transform: translateX(-50%);
+    font-family: 'PyeongChang';
+font-style: normal; font-weight: 700;
+font-size: 0.8rem;
+color: #FCDF08;}
+.fix-text2{/* 이 디스크를 발견한 외계 지적 생명체에게 
+    우리의 목소리를 남깁니다.*/
+    position: fixed; z-index: 10;
+    top: 0; left: 50%; transform: translateX(-50%);
+    font-family: 'PyeongChang';
+font-style: normal; font-weight: 700;
+font-size: 0.8rem;
+color: #6411FC;}
+.background{position: relative; z-index: 0;
+    width: 100%; height: 3000px;
+    top: 0; left: 0;
+    color: black;}
+.hidden-text {/*저 점이 우리가 있는 이곳입니다. 
+    여러분이 사랑하는, 당신이 아는, 당신이 들어본, 그리고 세상에 존재했던 
+    모든 사람들이 바로 저 작은 점 위에서 일생을 살았습니다.*/
+    position: relative; z-index: 100;
+    top: -500px; left: -50px; text-align: center;
+    font-size: 1rem; line-height: 160%;
+    color: #C19FFF;
+    opacity: 0;
+    transition: opacity 0.5s;
+    }
+.show {opacity: 1;}
+.pale-dot {position: relative; z-index: 1;
+    width: 100%; height: auto;}
+.navbar {position: relative; top: 0; left: 0; width: 100%; 
+    justify-content: space-between; display: flex;
+    align-items: center; padding: 10px; background-color: transparent; z-index: 10;}
+.navbar-nav {display: flex; list-style: none;
+        margin: 20px 30px; padding: 0;
+        flex-direction: column;}
+.nav-item {margin-right: 30px;
+        margin-bottom: 30px;}
+.nav-item a {font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 3rem;
+    color: #C19FFF; text-decoration: none;
+        font-weight: normal; font-weight: 400;}
+.nav-item:nth-child(1) {position: absolute;
+        top: 300px; left: 55%;}
+.nav-item:nth-child(2) {position: absolute;
+        top: 520px; left: 50%;}
+.nav-item:nth-child(3) {position: absolute;
+        top: 800px; left: 55%;}
+.nav-item:nth-child(4) {position: absolute;
+        top: 940px; left: 50%;}
+.nav-img {position: absolute; z-index: 1;
+    top: 25%; right: 0%;
+    width: 90%; height: auto;}
+.ex-text {/*보이저호의 운행 경로 속, 글자를 클릭해 레코드판을 확인해보세요.*/
+    position: relative; z-index: 5;
+    top: 267px; left: 79%;
+    font-family: 'PyeongChang'; font-style: normal; font-weight: 400;
+    font-size: 0.8rem; opacity: 0.8;
+    color: #FCDF08;}
+.backarrow{position: relative; top: 20px; left: 0;
+    height: 0.7%; width: auto;
+    padding: 10px; margin: 0px 15px;}
+.navbar2 {position: relative; top: 0; left: 0; width: 100%; 
+    justify-content: space-between; display: flex;
+    align-items: center; padding: 10px; background-color: transparent; z-index: 10;}
+.navbar-nav2 {display: flex; list-style: none;
+        margin: 200px 20px; padding: 0;
+        flex-direction: column;}
+.nav-item2 {margin-right: 0;
+        margin-bottom: 80px;}
+.nav-item2 a {color: #6411FC; text-decoration: none;
+        font-weight: normal; font-weight: 400; font-size: 1.5rem;
+        transition: 0.4s;}
+.nav-item2:hover {background-color: #C19FFF;
+    padding: 0px;}
+.navitem-how{position: relative; width: 200px; height: auto;
+top: -22.5%; right: 0;}
+.navitem-when{position: relative; width: 200px; height: auto;
+    top: -18.7%; right: 0;}
+.navitem-where{position: relative; width: 200px; height: auto;
+    top: -14.9%; right: 0;}
+.navitem-what{position: relative; width: 200px; height: auto;
+    top: -11.2%; right: 0;}
+
+.how1 {position: relative; z-index: 3; top: -790px; left: 10%;
+    height: auto; width: 30%;
+    animation: how1move 10s linear infinite;}
+    @keyframes how1move {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+            }
+.how2 {position: relative; z-index: 3; top: -580px; left: 30%;
+    height: auto; width: 35%;}
+.how-text {/* 골든 레코드 재생 방법 */
+    position: relative;
+    left: 60%; top: -1250px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 2rem;
+    color: #FCDF08;}
+.how-text2 {/* 레코드를 플레이어에 어떻게 넣어야 하는지를 설명합니다. */
+    position: relative;
+    left: 60%; top: -1270px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem;
+    color: #FCDF08;}
+.how-subtx1{/* 레코드 재생용 축음기 레코드와 레코드 바늘의 그림 (우주선에 비치됨) */
+    position: relative;
+    left: 50%; top: -1170px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.how-subtx2{/* 레코드를 돌리는 가장 적절한 속도를 2진법으로 나타냄 */
+    position: relative;
+    left: 50%; top: -1130px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.how-subtx3{/* 레코드 바늘의 측면화 */
+    position: relative;
+    right: 50%; top: -950px; text-align: right;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.how-subtx4{/* 레코드 재생시간이 한 시간 */
+    position: relative;
+    right: 50%; top: -900px; text-align: right;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+
+.when1 {position: relative; z-index: 3; top: -990px; left: 50%;
+    height: auto; width: 50%; overflow: hidden;
+    animation: whenmove 5s ease-in-out infinite;
+    transform-origin: 0% 0%;}
+    @keyframes whenmove {
+        0% {transform: scaleX(0);
+        filter: blur(4px);
+        opacity: 0;}
+        10% {transform: scaleX(1);
+        filter: blur(0px);
+        opacity: 1;}
+        100% {transform: scaleX(1);
+        filter: blur(0px);
+        opacity: 0;}
+    }
+
+.when2 {position: relative; z-index: 3; top: -500px; left: -35%;
+    height: auto; width: 25%;}
+.when-text {/* 영상 이미지 재생 시간 */
+    position: relative;
+    left: 5%; top: -1340px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 2rem;
+    color: #FCDF08;}
+.when-text2 {/* 영상 이미지 재생 방법 및 시간에 대해 설명합니다. */
+    position: relative;
+    left: 5%; top: -1360px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem;
+    color: #FCDF08;}
+.when-subtx1{/* 스캔을 통해 이미지를 표현하려면 512프레임의 수직 스캔이 필요함을 나타냄 */
+    position: relative;
+    left: 50%; top: -920px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.when-subtx2{/* 제대로 스캔되었을 경우 첫 번째 이미지는 원으로 표시됨 */
+    position: relative;
+    left: 50%; top: -850px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.when-subtx3{/* 골든 레코드에 녹음된 비디오 신호의 일반적인 파장 형태 */
+    position: relative;
+    right: 60%; top: -1380px; text-align: right;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.when-subtx4{/* 스캔되는 시간을 이진법으로 나타냄 */
+    position: relative;
+    right: 60%; top: -1350px; text-align: right;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+
+.where {position: relative; z-index: 3; top: -800px; left: 3%;
+    height: auto; width: 80%;
+    animation: wheremove 5s ease-in-out infinite;
+    transform-origin: 25% 50%;}
+    @keyframes wheremove {
+        0% {opacity: 1;}
+        50% {opacity: 0.1;}
+        100% {opacity: 1;}
+            }
+.where-text {/* 우리 은하의 위치 */
+    position: relative;
+    left: 65%; top: -1500px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 2rem;
+    color: #FCDF08;}
+.where-text2 {/* 태양과 펄서들의 위치를 알려주어 지구의 위치를 계산해낼 수 있습니다. */
+    position: relative;
+    left: 65%; top: -1520px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem;
+    color: #FCDF08;}
+.where-subtx{/* 태양으로부터 나오는 14개의 펄서를 이용해 태양의 위치를 2진법으로 나타내고 있음 */
+    position: relative;
+    left: 65%; top: -1400px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+
+.what {position: relative; z-index: 3; top: -630px; left: 20%;
+    height: auto; width: 40%;}
+.what-text {/* 수소원자의 분자 구조 */
+    position: relative;
+    left: 30%; top: -1050px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 2rem;
+    color: #FCDF08;}
+.what-text2 {/* 전자가 배열을 바꾸며 발생하는 21cm 길이의 파장을 사용해
+    cm, Å (옹스트롬), m, km와 같은 길이 단위를 설명합니다. */
+    position: relative;
+    left: 30%; top: -1070px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem;
+    color: #FCDF08;}
+.what-subtx1{/* 양성자와 전자가 회전하는 순간을 나타냄 */
+    position: relative;
+    left: 60%; top: -990px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.what-subtx2{/* 원자번호 1인 수소 원자의 가장 낮은 상태를 표현*/
+    position: relative;
+    left: 30%; top: -730px;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;}
+.what-subtx3{/* 양성자와 전자가 같은 방향으로
+    회전할 때 원자는 21cm의 특정 길이의 파장을 방출하며 배열을 바꾼다. */
+    position: relative;
+    left: 55%; top: -1400px; text-align: justify;
+    font-family: 'PyeongChang'; font-style: normal;
+    font-weight: 400; font-size: 1rem; line-height: 150%;
+    color: #B7B7B7;
+    transform: rotate(-90deg);}
+
+.nextarr1{position: absolute; left: 75%; top: 800px;
+    width: 20%; height: auto;}
+
+.pixelnav {position: absolute; z-index: 1;
+    top: 30%; right: 0;
+    width: 90%; height: auto;}
+.fin-text1 {/* 저 작은 픽셀의 한 쪽 구석에서 온 사람들이 같은 픽셀의 다른 쪽에 있는, 
+    겉모습이 거의 분간도 안되는 사람들에게 저지른 셀 수 없는 만행을 생각해보십시오. */
+    position: relative; z-index: 10;
+    left: 30%; top: 320px;
+    font-family: 'PyeongChang'; font-style: normal;font-weight: 400;
+    font-size: 1rem; line-height: 150%;
+    color: #FFFFFF;
+    animation: text1move 1s 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;}
+    @keyframes text1move {
+        0% {letter-spacing: -0.5em;
+        opacity: 0;}
+        40% {opacity: 0.6;}
+        100% {opacity: 1;}
+    }
+.fin-text2 {/* 얼마나 잦은 오해가 있었는지, 얼마나 서로를 죽이려고 했는지, 
+    그리고 그런 그들의 증오가 얼마나 강했는지 생각해보십시오. */
+    position: relative; z-index: 10;
+    left: 40%; top: 570px;
+    font-family: 'PyeongChang'; font-style: normal;font-weight: 400;
+    font-size: 1rem; line-height: 150%;
+    color: #B7B7B7;
+    animation: text2move 4s 4s ease-in-out infinite;}
+    @keyframes text2move {
+        0% {filter: blur(3px);
+        opacity: 0.5;}
+        30% {filter: blur(1px);
+        opacity: 1;}
+        100% {filter: blur(2px)
+        opacity: 0.5;}
+    }
+.fin-text3 {/* 위대한 척하는 우리의 몸짓, 스스로 중요한 존재라고 생각하는 
+    우리의 믿음, 우리가 우주에서 특별한 위치를 차지하고 있다는 망상은 
+    저 창백한 파란 불빛 하나만 봐도 그 근거를 잃습니다. */
+    position: relative; z-index: 10;
+    left: 48%; top: 620px;
+    font-family: 'PyeongChang'; font-style: normal;font-weight: 400;
+    font-size: 1rem; line-height: 150%;
+    color: #B7B7B7;
+    animation: text3move 4.5s 4.5s ease-in-out infinite;}
+    @keyframes text3move {
+        0% {filter: blur(3px);
+        opacity: 0.5;}
+        30% {filter: blur(1px);
+        opacity: 1;}
+        100% {filter: blur(2px)
+        opacity: 0.5;}
+    }
+.fin-text4 {/* 우리가 사는 지구는 
+    우리를 둘러싼 거대한 우주의 암흑 속에 있는 외로운 하나의 점입니다. */
+    position: relative; z-index: 10;
+    width: 30%; height: auto;
+    left: 20%; top: 770px; text-align: center;
+    font-family: 'PyeongChang'; font-style: normal;font-weight: 400;
+    font-size: 1rem; line-height: 150%;
+    color: #B7B7B7;
+    padding: 15px;
+    border: 1px solid #6411FC;
+    background-color: #000;
+    box-shadow:
+    2.8px 5.4px 1.5px rgba(51, 10, 125, 1),
+    6.3px 12.2px 3.6px rgba(45, 11, 108, 0.9),
+    11px 21.3px 6.6px rgba(40, 13, 92, 0.8),
+    17.5px 33.8px 10.6px rgba(33, 12, 71, 0.7),
+    27px 52.2px 16.2px rgba(24, 10, 50, 0.6),
+    42.2px 81.4px 24.4px rgba(18, 9, 37, 0.5),
+    70.1px 135.1px 37.6px rgba(12, 6, 24, 0.4),
+    140px 270px 70px rgba(7, 4, 13, 0.3);
+    animation: boxmove 5s ease-in-out infinite both;}
+    @keyframes boxmove {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.05);}
+        100% {transform: scale(1);}
+    }
+span {color: #FCDF08;}
+.kacl{position: relative; z-index: 10;
+    left: 90%; top: 1100px;
+    font-family: 'PyeongChang'; font-style: normal;font-weight: 400;
+    font-size: 1rem; line-height: 150%;
+    color: #B7B7B7;}
+footer{position: absolute; z-index: 2; 
+    width: 100%; height: auto;
+    background-color: #000;
+    font-family: 'PyeongChang-Bold'; font-style: normal;font-weight: 400;}
+footer p {color: #B7B7B7; font-size: 0.8rem; margin: 0 30px;}
